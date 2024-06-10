@@ -1,6 +1,6 @@
 from io import open
 
-fichero = open("Personas", "r",  encoding='utf-8') 
+fichero = open("personas.txt", "r",  encoding='utf-8') 
 lineas = fichero.readlines()
 fichero.close()
 
