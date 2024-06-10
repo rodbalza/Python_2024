@@ -8,9 +8,9 @@ fichero.close()
 personas = []
 
 for linea in lineas:
-    linea.replace("\n", "")
-    campos = linea.split(";")
+    campos = linea.replace("\n", "").split(";")
     persona = {'id': campos[0], 'nombre': campos[1], 'apellido': campos[2], 'nacimiento': campos[3]}
     personas.append(persona)
 
-print(personas)
+for p in personas:
+    print(f"(id={p['id']}) {p['nombre']} {p['apellido']} => {p['nacimiento']}")
